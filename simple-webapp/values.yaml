@@ -1,0 +1,16 @@
+image:
+  repository: kodekloud/simple-webapp
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  host: playground.allganize.dev
+  path: /
+  pathType: Prefix
+
+replicaCount: 1
