@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/geonwoo-allganize/argocd-demo.git
+    repoURL: https://github.com/geonwoo-allganize/helm-test.git
     targetRevision: HEAD
     path: simple-webapp
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: app
   syncPolicy:
     automated:
       prune: true
